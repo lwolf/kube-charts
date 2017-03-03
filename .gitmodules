@@ -1,0 +1,7 @@
+[submodule "gitlab"]
+    path = gitlab
+    url = https://github.com/lwolf/gitlab-chart.git
+[submodule "stolon"]
+    path = stolon
+    url = https://github.com/lwolf/stolon-chart.git
+
