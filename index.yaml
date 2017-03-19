@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   gitlab:
-  - created: 2017-03-19T18:26:42.784419329+01:00
+  - created: 2017-03-19T19:00:14.033320928+01:00
     description: GitLab Community Edition
     digest: b1b3169632dbdee0b4f4097d123a587c13192fea06cf415ad71338ec094349a1
     home: https://about.gitlab.com
@@ -23,8 +23,45 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.1.0.tgz
     version: 0.1.0
+  gitlab-registry:
+  - created: 2017-03-19T19:00:14.033816702+01:00
+    description: Gitlab docker registry
+    digest: e53ad185b82e618d826f3d7ea9b0d49b12afa357eebc31b962e453ac61868abe
+    home: https://about.gitlab.com
+    icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
+    keywords:
+    - gitlab
+    - registry
+    maintainers:
+    - email: ipaq.lw@gmail.com
+      name: Sergey Nuzhdin
+    name: gitlab-registry
+    sources:
+    - https://hub.docker.com/r/gitlab/gitlab-runner/
+    urls:
+    - http://charts.lwolf.org/gitlab-registry-0.2.0.tgz
+    version: 0.2.0
+  gitlab-runner:
+  - created: 2017-03-19T19:00:14.034345123+01:00
+    description: GitLab-ci runner
+    digest: 0045c943a3ae47ab02ba2fa0409d803d7567327104d716b908f768314fe71f71
+    home: https://about.gitlab.com
+    icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
+    keywords:
+    - git
+    - ci
+    - deploy
+    maintainers:
+    - email: ipaq.lw@gmail.com
+      name: Sergey Nuzhdin
+    name: gitlab-runner
+    sources:
+    - https://hub.docker.com/r/gitlab/gitlab-runner/
+    urls:
+    - http://charts.lwolf.org/gitlab-runner-0.2.0.tgz
+    version: 0.2.0
   stolon:
-  - created: 2017-03-19T18:26:42.788244783+01:00
+  - created: 2017-03-19T19:00:14.036041766+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 3e9ea8ba92ca6d4a759fd64e9a7b64d21a2779b4bfd1815a43905552e47dc526
     home: https://github.com/sorintlab/stolon
@@ -38,7 +75,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.1.1.tgz
     version: 0.1.1
-  - created: 2017-03-19T18:26:42.786403822+01:00
+  - created: 2017-03-19T19:00:14.035200646+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: bb4b7d7bf3678ebfbe368c279414254c5b0b61e26654f5ae0fface7f81676222
     home: https://github.com/sorintlab/stolon
@@ -52,4 +89,4 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.1.0.tgz
     version: 0.1.0
-generated: 2017-03-19T18:26:42.77754022+01:00
+generated: 2017-03-19T19:00:14.025809795+01:00
