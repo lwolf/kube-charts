@@ -1,9 +1,10 @@
-name: gitlab-registry
+name: runner
 version: 0.2.0
-description: Gitlab docker registry
+description: GitLab-ci runner
 keywords:
-- gitlab
-- registry
+- git
+- ci
+- deploy
 home: https://about.gitlab.com
 sources:
 - https://hub.docker.com/r/gitlab/gitlab-runner/
