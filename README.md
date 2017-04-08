@@ -11,6 +11,8 @@ lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
 ```
 
 # Current content:
-* Gitlab - https://github.com/lwolf/gitlab-chart
-* Stolon - https://github.com/lwolf/stolon-chart
-
+* Gitlab 
+* Gitlab-runner
+* Gitlab-registry
+* Stolon
+* Plex
