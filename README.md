@@ -11,8 +11,8 @@ lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
 ```
 
 # Current content:
-* Gitlab 
-* Gitlab-runner
-* Gitlab-registry
-* Stolon
-* Plex
+* Gitlab - gitlab-ce
+* Runner - gitlab runner
+* Registry - docker registry with gitlab settings
+* Stolon - HA PostgreSQL cluster
+* Plex - plex.tv media center
