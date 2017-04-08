@@ -1,0 +1,62 @@
+## Plex image
+## ref: https://hub.docker.com/r/plexinc/pms-docker/
+##
+image: plexinc/pms-docker
+
+## Plex image version
+## ref: https://hub.docker.com/r/plexinc/pms-docker/tags/
+##
+imageTag: "1.5.3.3580-4b377d295"
+
+## Specify a imagePullPolicy
+## 'Always' if imageTag is 'latest', else set to 'IfNotPresent'
+## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
+##
+# imagePullPolicy:
+
+## Specify node label to
+nodeSelector: "datanode"
+nodePort: 32400
+serviceType: NodePort
+
+tz: "Europe/Stockholm"
+#advertiseIp: "http://datanode-ip:32400"
+plexUid: "99"
+plexGid: "99"
+#plexClaim: ""
+# allowedNetworks: ""
+
+## Configure resource requests and limits
+## ref: http://kubernetes.io/docs/user-guide/compute-resources/
+##
+resources:
+  requests:
+    memory: 500Mi
+    cpu: 500m
+  limits:
+    memory: 500Mi
+    cpu: 500m
+
+
+volumes:
+  config:
+    type: host
+    hostPath: "/data/plex"
+    containerPath: "/config"
+  transcode:
+    type: host
+    hostPath: "/tmp"
+    containerPath: "/transcode"
+#  data1:
+#    type: host
+#    hostPath: "/media/data1"
+#    containerPath: "/data"
+#  data2:
+#    type: host
+#    hostPath: "/media/data2"
+#    containerPath: "/data2"
+#  pvcdata:
+#    type: claim
+#    containerPath: "/data3"
+#    claimName: my-claim-name
+#

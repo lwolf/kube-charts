@@ -1,0 +1,12 @@
+name: plex
+version: 0.1.0
+description: Plex
+keywords:
+- plex.tv
+home: https://www.plex.tv/
+sources:
+- https://hub.docker.com/r/plexinc/pms-docker/
+icon: https://www.plex.tv/wp-content/themes/plex/img/plex-logo.png
+maintainers:
+- name: Sergey Nuzhdin
+  email: ipaq.lw@gmail.com

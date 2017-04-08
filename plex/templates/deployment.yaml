@@ -1,0 +1,99 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}
+  labels:
+    app: {{ template "fullname" . }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  replicas: 1
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: {{ template "fullname" . }}
+        chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+        release: "{{ .Release.Name }}"
+        heritage: "{{ .Release.Service }}"
+      annotations:
+        pod.beta.kubernetes.io/hostname: plex-stocholm
+    spec:
+      {{- if .Values.nodeSelector }}
+      nodeSelector:
+        role: {{ .Values.nodeSelector }}
+      {{- end }}
+      containers:
+      - name: {{ template "fullname" . }}
+        image: "{{ .Values.image }}:{{ .Values.imageTag }}"
+        imagePullPolicy: {{ default "" .Values.imagePullPolicy | quote }}
+        env:
+        - name: TZ
+          value: {{ .Values.tz | quote}}
+        {{- if .Values.advertiseIp }}
+        - name: ADVERTISE_IP
+          value: {{ .Values.advertiseIp | quote }}
+        {{- end }}
+        {{- if .Values.plexUid }}
+        - name: PLEX_UID
+          value: {{ .Values.plexUid | quote }}
+        {{- end }}
+        {{- if .Values.plexGid }}
+        - name: PLEX_GID
+          value: {{ .Values.plexGid | quote }}
+        {{- end }}
+        {{- if .Values.plexClaim }}
+        - name: PLEX_CLAIM
+          value: {{ .Values.plexClaim | quote }}
+        {{- end }}
+        {{- if .Values.allowedNetworks }}
+        - name: ALLOWED_NETWORKS
+          value: {{ .Values.allowedNetworks }}
+        {{- end }}
+        ports:
+        - name: http
+          containerPort: 32400
+          protocol: TCP
+        - name: tcp1
+          containerPort: 3005
+          protocol: TCP
+        - name: tcp2
+          containerPort: 8324
+          protocol: TCP
+        - name: tcp3
+          containerPort: 32469
+          protocol: TCP
+        - name: udp1
+          containerPort: 1900
+          protocol: UDP
+        - name: udp2
+          containerPort: 32410
+          protocol: UDP
+        - name: udp3
+          containerPort: 32412
+          protocol: UDP
+        - name: udp4
+          containerPort: 32413
+          protocol: UDP
+        - name: udp5
+          containerPort: 32414
+          protocol: UDP
+        livenessProbe:
+          httpGet:
+            path: /web/index.html
+            port: 32400
+          initialDelaySeconds: 180
+          timeoutSeconds: 15
+        readinessProbe:
+          httpGet:
+            path: /web/index.html
+            port: 32400
+          initialDelaySeconds: 15
+          timeoutSeconds: 1
+        volumeMounts:
+        {{ template "volumeMounts" . }}
+        resources:
+{{ toYaml .Values.resources | indent 10 }}
+      volumes:
+        {{ template "volumes" . }}
