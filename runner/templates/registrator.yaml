@@ -1,6 +1,6 @@
 {{ if not .Values.token }}
 {{ if .Values.registrationToken }}
-apiVersion: extensions/v1beta1
+apiVersion: batch/v1
 kind: Job
 metadata:
   name: {{ template "fullname" . }}
