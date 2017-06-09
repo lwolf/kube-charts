@@ -18,6 +18,7 @@ imageTag: "1.5.3.3580-4b377d295"
 nodeSelector: "datanode"
 nodePort: 32400
 serviceType: NodePort
+hostname: plex-server
 
 tz: "Europe/Stockholm"
 #advertiseIp: "http://datanode-ip:32400"

@@ -18,7 +18,7 @@ spec:
         release: "{{ .Release.Name }}"
         heritage: "{{ .Release.Service }}"
       annotations:
-        pod.beta.kubernetes.io/hostname: plex-stocholm
+        pod.beta.kubernetes.io/hostname: {{ .Values.hostname }}
     spec:
       {{- if .Values.nodeSelector }}
       nodeSelector:
