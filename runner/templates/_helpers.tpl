@@ -23,6 +23,19 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- end -}}
 {{- end -}}
 
+{{- define "pullSecretsList" -}}
+{{- range $index, $element := .Values.executor.kubernetes.imagePullSecrets -}}
+    {{- if $index -}},{{- end -}}
+    {{- $element | quote -}}
+{{- end -}}
+{{- end -}}
+
+{{- define "nodeSelector" -}}
+{{- range $index, $element := .Values.executor.kubernetes.nodeSelector }}
+          {{ $index }} = {{ $element | quote }}
+{{- end }}
+{{- end -}}
+
 {{- define "minio.fullname" -}}
 {{- if .Values.cache.serverAddress -}}
 {{ .Values.cache.serverAddress }}
