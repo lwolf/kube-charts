@@ -1,0 +1,11 @@
+{{- if .Values.executor.kubernetes.enabled }}
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1alpha1
+metadata:
+  name: gitlab-admin
+  namespace: {{ .Values.executor.kubernetes.namespace }}
+rules:
+  - apiGroups: [""]
+    resources: ["*"]
+    verbs: ["*"]
+{{- end -}}

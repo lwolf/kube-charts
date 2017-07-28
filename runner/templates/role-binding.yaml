@@ -1,0 +1,15 @@
+{{- if .Values.executor.kubernetes.enabled }}
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1alpha1
+metadata:
+  name: gitlab-admin
+  namespace: {{ .Values.executor.kubernetes.namespace }}
+subjects:
+  - kind: ServiceAccount
+    name: default
+    namespace: {{ .Values.executor.kubernetes.namespace }}
+roleRef:
+  kind: Role
+  name: gitlab-admin
+  apiGroup: rbac.authorization.k8s.io
+{{- end -}}
