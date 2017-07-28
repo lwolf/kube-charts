@@ -42,7 +42,7 @@ spec:
           - --registration-token
           - {{ .Values.registrationToken | quote}}
           - --executor
-          - {{ .Values.executor.type | quote }}
+          - {{ template "executorType" . }}
           - --name
           - {{ template "fullname" . }}
           - --docker-image

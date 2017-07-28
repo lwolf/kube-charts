@@ -37,14 +37,34 @@ resources:
 # metricsServer: ""
 
 executor:
-  type: "docker"
-  tlsVerify: "false"
-  image: "docker:latest"
-  privileged: "true"
-  volumes:
-   - "/cache"
-   - "/var/run/docker.sock:/var/run/docker.sock"
-   - "/usr/bin/docker:/usr/bin/docker"
+  ## Configure executor type
+  ## If both types are enabled, kubernetes will be used,
+  ## if neither type is enabled template rendering will fail.
+  docker:
+    enabled: true
+    tlsVerify: "false"
+    image: "docker:latest"
+    privileged: "true"
+    volumes:
+     - "/cache"
+     - "/var/run/docker.sock:/var/run/docker.sock"
+     - "/usr/bin/docker:/usr/bin/docker"
+
+  kubernetes:
+    enabled: false
+    namespace: "gitlab"
+#    privileged: "false"
+#    host: ""
+#    certFile: ""
+#    keyFile: ""
+#    caFile: ""
+#    image: ""
+#    nodeSelector:
+#      key: "value"
+#      key2: "value2"
+#      key3: "value3"
+#    imagePullSecrets:
+#      - docker-registry-credentials
 
 cache:
   enabled: false
