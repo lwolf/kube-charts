@@ -22,8 +22,8 @@ data:
       name = "{{ template "fullname" . }}"
       url = {{ .Values.gitlabUrl | quote }}
       token = {{ .Values.token | quote }}
-      executor = {{ default "docker" .Values.executor.type | quote }}
-      {{- if .Values.executor.kubernetes }}
+      {{- if .Values.executor.kubernetes.enabled }}
+      executor = "kubernetes"
       [runners.kubernetes]
         namespace = {{ required "Kubernetes namespace is required" .Values.executor.kubernetes.namespace | quote }}
         {{- if .Values.executor.kubernetes.host }}
@@ -51,12 +51,15 @@ data:
         [runners.kubernetes.node_selector]
           {{- template "nodeSelector" . }}
         {{- end }}
-      {{- else }}
+      {{- else if .Values.executor.docker.enabled }}
+      executor = "docker"
       [runners.docker]
-        tls_verify = {{ .Values.executor.tlsVerify }}
-        image = {{ .Values.executor.image | quote }}
-        privileged = {{ .Values.executor.privileged }}
+        tls_verify = {{ .Values.executor.docker.tlsVerify }}
+        image = {{ .Values.executor.docker.image | quote }}
+        privileged = {{ .Values.executor.docker.privileged }}
         volumes = [{{ template "volumesList" . }}]
+      {{- else }}
+      {{ fail "One selector type must be enabled" }}
       {{- end }}
       {{ if .Values.cache.enabled -}}
       [runners.cache]
