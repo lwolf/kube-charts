@@ -33,7 +33,15 @@ We truncate at 63 chars because some Kubernetes name fields are limited to this 
 {{- define "nodeSelector" -}}
 {{- range $index, $element := .Values.executor.kubernetes.nodeSelector }}
           {{ $index }} = {{ $element | quote }}
-{{- end }}
+{{- end -}}
+{{- end -}}
+
+{{- define "executorType" -}}
+{{- if .Values.executor.kubernetes.enabled -}}
+kubernetes
+{{- else -}}
+docker
+{{- end -}}
 {{- end -}}
 
 {{- define "minio.fullname" -}}
