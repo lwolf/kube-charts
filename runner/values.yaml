@@ -37,6 +37,9 @@ resources:
 # metricsServer: ""
 
 executor:
+  ## Configure executor type
+  ## If both types are enabled, kubernetes will be used,
+  ## if neither type is enabled template rendering will fail.
   docker:
     enabled: true
     tlsVerify: "false"
