@@ -65,6 +65,7 @@ data:
       [runners.cache]
         Type = {{ .Values.cache.type | quote }}
         ServerAddress = "{{ template "minio.fullname" . }}-svc:9000"
+        Insecure = {{ default "false" .Values.cache.insecure }}
         AccessKey = {{ .Values.cache.accessKey | quote }}
         SecretKey = {{ .Values.cache.secretKey | quote }}
         BucketName = {{ default "runner" .Values.cache.bucketName | quote }}
