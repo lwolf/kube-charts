@@ -47,7 +47,7 @@ docker
 {{- define "minio.fullname" -}}
 {{- if .Values.cache.serverAddress -}}
 {{ .Values.cache.serverAddress }}
-{{ else }}
-{{- printf "%s-minio" .Release.Name | trunc 63 | trimSuffix "-" -}}
+{{- else }}
+{{- printf "%s-minio-svc" .Release.Name | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
 {{- end -}}
