@@ -64,9 +64,9 @@ data:
       {{ if .Values.cache.enabled -}}
       [runners.cache]
         Type = {{ .Values.cache.type | quote }}
-        ServerAddress = {{ .Values.cache.serverAddress | quote }}
+        ServerAddress = {{ required "Cache server address is required." .Values.cache.serverAddress | quote }}
         Insecure = {{ default "false" .Values.cache.insecure }}
-        AccessKey = {{ .Values.cache.accessKey | quote }}
-        SecretKey = {{ .Values.cache.secretKey | quote }}
+        AccessKey = {{ required "Cache access key is required." .Values.cache.accessKey | quote }}
+        SecretKey = {{ required "Cache secret key is required." .Values.cache.secretKey | quote }}
         BucketName = {{ default "runner" .Values.cache.bucketName | quote }}
       {{- end }}
