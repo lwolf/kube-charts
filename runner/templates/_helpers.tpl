@@ -43,11 +43,3 @@ kubernetes
 docker
 {{- end -}}
 {{- end -}}
-
-{{- define "minio.fullname" -}}
-{{- if .Values.cache.serverAddress -}}
-{{ .Values.cache.serverAddress }}
-{{- else }}
-{{- printf "%s-minio-svc" .Release.Name | trunc 63 | trimSuffix "-" -}}
-{{- end -}}
-{{- end -}}
