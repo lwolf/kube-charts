@@ -6,7 +6,7 @@ image: gitlab/gitlab-runner
 ## Gitlab image version
 ## ref: https://hub.docker.com/r/gitlab/gitlab-runner/tags/
 ##
-imageTag: "v9.4.1"
+imageTag: "v9.4.4"
 
 ## Specify a imagePullPolicy
 ## 'Always' if imageTag is 'latest', else set to 'IfNotPresent'
