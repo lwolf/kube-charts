@@ -15,7 +15,7 @@ data:
     sentry_dsn = "{{ .Values.sentryDSN }}"
     {{ end -}}
     {{ if .Values.metricsServer -}}
-    metrics_server = {{ .Values.metricsServer -}}
+    metrics_server = "0.0.0.0:9252"
     {{ end -}}
 
     [[runners]]

@@ -20,11 +20,21 @@ spec:
         heritage: "{{ .Release.Service }}"
       annotations:
         checksum/config-map: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+      {{- if .Values.metricsServer }}
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9252"
+      {{- end }}
     spec:
       containers:
       - name: {{ template "fullname" . }}
         image: "{{ .Values.image }}:{{ .Values.imageTag }}"
         imagePullPolicy: {{ default "" .Values.imagePullPolicy | quote }}
+      {{- if .Values.metricsServer }}
+        ports:
+        - containerPort: 9252
+          name: metrics
+          protocol: TCP
+      {{- end }}
         resources:
 {{ toYaml .Values.resources | indent 10 }}
         volumeMounts:
@@ -39,4 +49,4 @@ spec:
       - name: config
         configMap:
           name: {{ template "fullname" . }}
-{{ end}}
+{{ end }}
