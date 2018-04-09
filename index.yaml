@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   gitlab:
-  - created: 2018-02-27T21:33:18.007729Z
+  - created: 2018-04-09T20:52:58.547378+01:00
     description: GitLab Community Edition
     digest: 2d2ca27acfb5f1e34b598d6272f5ad6272fd243f3e532109d371712310882b2d
     home: https://about.gitlab.com
@@ -23,7 +23,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.8.tgz
     version: 0.2.8
-  - created: 2018-02-27T21:33:18.004272Z
+  - created: 2018-04-09T20:52:58.543855+01:00
     description: GitLab Community Edition
     digest: 76e02dd177161bac983c0d97cf65c192922747c967c7107f2d67b64a4fd9683d
     home: https://about.gitlab.com
@@ -45,7 +45,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.7.tgz
     version: 0.2.7
-  - created: 2018-02-27T21:33:18.000939Z
+  - created: 2018-04-09T20:52:58.539926+01:00
     description: GitLab Community Edition
     digest: a4229b043f3a98de2a6499bce6d1679f9ddb55291cde68c166b336a798534bf6
     home: https://about.gitlab.com
@@ -67,7 +67,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.6.tgz
     version: 0.2.6
-  - created: 2018-02-27T21:33:17.998001Z
+  - created: 2018-04-09T20:52:58.536553+01:00
     description: GitLab Community Edition
     digest: f0dc034f07d34ca0cf1f9f83cbd6917297ea147beb649e4e419e91dd1d39e820
     home: https://about.gitlab.com
@@ -89,7 +89,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.5.tgz
     version: 0.2.5
-  - created: 2018-02-27T21:33:17.994568Z
+  - created: 2018-04-09T20:52:58.533476+01:00
     description: GitLab Community Edition
     digest: a80cbe8e2229607806edb95d0b6b2c17c827325785066d19167b680f11546e4b
     home: https://about.gitlab.com
@@ -111,7 +111,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.4.tgz
     version: 0.2.4
-  - created: 2018-02-27T21:33:17.989025Z
+  - created: 2018-04-09T20:52:58.530145+01:00
     description: GitLab Community Edition
     digest: e8702b58d55ad99a232b793d97736821cba6a8e5f7a6c9e7094132fd997f0910
     home: https://about.gitlab.com
@@ -133,7 +133,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.3.tgz
     version: 0.2.3
-  - created: 2018-02-27T21:33:17.985248Z
+  - created: 2018-04-09T20:52:58.521934+01:00
     description: GitLab Community Edition
     digest: 0959fcb2abbaa1e1596d905b45b36a5967a6a1a842a55e7ce6c2321e5be746f5
     home: https://about.gitlab.com
@@ -155,7 +155,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.2.tgz
     version: 0.2.2
-  - created: 2018-02-27T21:33:17.98169Z
+  - created: 2018-04-09T20:52:58.517683+01:00
     description: GitLab Community Edition
     digest: b1b3169632dbdee0b4f4097d123a587c13192fea06cf415ad71338ec094349a1
     home: https://about.gitlab.com
@@ -178,7 +178,7 @@ entries:
     - http://charts.lwolf.org/gitlab-0.1.0.tgz
     version: 0.1.0
   gitlab-registry:
-  - created: 2018-02-27T21:33:18.008408Z
+  - created: 2018-04-09T20:52:58.54787+01:00
     description: Gitlab docker registry
     digest: e53ad185b82e618d826f3d7ea9b0d49b12afa357eebc31b962e453ac61868abe
     home: https://about.gitlab.com
@@ -196,7 +196,7 @@ entries:
     - http://charts.lwolf.org/gitlab-registry-0.2.0.tgz
     version: 0.2.0
   gitlab-runner:
-  - created: 2018-02-27T21:33:18.008942Z
+  - created: 2018-04-09T20:52:58.548407+01:00
     description: GitLab-ci runner
     digest: 0045c943a3ae47ab02ba2fa0409d803d7567327104d716b908f768314fe71f71
     home: https://about.gitlab.com
@@ -215,7 +215,7 @@ entries:
     - http://charts.lwolf.org/gitlab-runner-0.2.0.tgz
     version: 0.2.0
   plex:
-  - created: 2018-02-27T21:33:18.010051Z
+  - created: 2018-04-09T20:52:58.549671+01:00
     description: Plex
     digest: 6f1fc7dd9acc801448703a31457e3bcaf5260a5ec3a1a50a54cb60ff7aba5465
     home: https://www.plex.tv/
@@ -231,7 +231,7 @@ entries:
     urls:
     - http://charts.lwolf.org/plex-0.1.1.tgz
     version: 0.1.1
-  - created: 2018-02-27T21:33:18.009565Z
+  - created: 2018-04-09T20:52:58.548969+01:00
     description: Plex
     digest: d9fca733b26bdbd4d6f23aadeee8ba524edbc1155a42fdf6cb6c87e50903c529
     home: https://www.plex.tv/
@@ -248,7 +248,7 @@ entries:
     - http://charts.lwolf.org/plex-0.1.0.tgz
     version: 0.1.0
   registry:
-  - created: 2018-02-27T21:33:18.010654Z
+  - created: 2018-04-09T20:52:58.550167+01:00
     description: Gitlab docker registry
     digest: 36906906cd5ebc9c285c255b965619cda4e27a6e00e0793ebfb7c15655dcfb7c
     home: https://about.gitlab.com
@@ -266,7 +266,7 @@ entries:
     - http://charts.lwolf.org/registry-0.2.0.tgz
     version: 0.2.0
   runner:
-  - created: 2018-02-27T21:33:18.014985Z
+  - created: 2018-04-09T20:52:58.555418+01:00
     description: GitLab-ci runner
     digest: 04e4271bc5af216f6d73c4144758d10c34bed4a2f633dfe264904012e02c4b36
     home: https://about.gitlab.com
@@ -284,7 +284,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.4.3.tgz
     version: 0.4.3
-  - created: 2018-02-27T21:33:18.013316Z
+  - created: 2018-04-09T20:52:58.554742+01:00
     description: GitLab-ci runner
     digest: 93e415d727fef063cabe42a88343c175d5fb0713a1c8957df047dce5aecb53f5
     home: https://about.gitlab.com
@@ -302,7 +302,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.4.2.tgz
     version: 0.4.2
-  - created: 2018-02-27T21:33:18.012487Z
+  - created: 2018-04-09T20:52:58.553352+01:00
     description: GitLab-ci runner
     digest: 47feb3f0d8cd4ca143f7645b906d348a52eca46c44b323566ad62967964cd28c
     home: https://about.gitlab.com
@@ -320,7 +320,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.4.1.tgz
     version: 0.4.1
-  - created: 2018-02-27T21:33:18.011895Z
+  - created: 2018-04-09T20:52:58.551924+01:00
     description: GitLab-ci runner
     digest: 30954975f4d3753266ac94b3909db29661cff2789bf38153396beb800ed14eb1
     home: https://about.gitlab.com
@@ -338,7 +338,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.3.0.tgz
     version: 0.3.0
-  - created: 2018-02-27T21:33:18.01112Z
+  - created: 2018-04-09T20:52:58.550686+01:00
     description: GitLab-ci runner
     digest: a99630f2870e1bcfcbb91feb58a85f1457678af01c4b91e36b4584618b411d04
     home: https://about.gitlab.com
@@ -357,7 +357,23 @@ entries:
     - http://charts.lwolf.org/runner-0.2.0.tgz
     version: 0.2.0
   stolon:
-  - created: 2018-02-27T21:33:18.019971Z
+  - created: 2018-04-09T20:52:58.559915+01:00
+    description: Stolon Helm Chart for Kubernetes.
+    digest: 813b9e133f5ba5fb66fc9a22feb61f4f9cdda8dc0cdc41391d9cc750f529b7fe
+    home: https://github.com/sorintlab/stolon
+    maintainers:
+    - email: ipaq.lw@gmail.com
+      name: Sergey Nuzhdin
+    - email: rluckie@cisco.com
+      name: Ryan Luckie
+    name: stolon
+    sources:
+    - https://github.com/sorintlab/stolon
+    - https://github.com/lwolf/stolon-chart
+    urls:
+    - http://charts.lwolf.org/stolon-0.5.0.tgz
+    version: 0.5.0
+  - created: 2018-04-09T20:52:58.55913+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 801d19535da813a85f164f454d3701751ef381cba446940f06611d94cd18c8dd
     home: https://github.com/sorintlab/stolon
@@ -373,7 +389,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.4.0.tgz
     version: 0.4.0
-  - created: 2018-02-27T21:33:18.019383Z
+  - created: 2018-04-09T20:52:58.558434+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 0cec617616fe6aa456280d4315261e561776bfd9950ac9a9b6755b52121f23a6
     home: https://github.com/sorintlab/stolon
@@ -387,7 +403,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.3.0.tgz
     version: 0.3.0
-  - created: 2018-02-27T21:33:18.018707Z
+  - created: 2018-04-09T20:52:58.557841+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 3eccd97357791c4cc3047ed4cec7a3250d72b11fdb00b5c7710852ae2f13db55
     home: https://github.com/sorintlab/stolon
@@ -401,7 +417,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.2.0.tgz
     version: 0.2.0
-  - created: 2018-02-27T21:33:18.018133Z
+  - created: 2018-04-09T20:52:58.557261+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 3e9ea8ba92ca6d4a759fd64e9a7b64d21a2779b4bfd1815a43905552e47dc526
     home: https://github.com/sorintlab/stolon
@@ -415,7 +431,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.1.1.tgz
     version: 0.1.1
-  - created: 2018-02-27T21:33:18.017144Z
+  - created: 2018-04-09T20:52:58.556365+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: bb4b7d7bf3678ebfbe368c279414254c5b0b61e26654f5ae0fface7f81676222
     home: https://github.com/sorintlab/stolon
@@ -429,4 +445,4 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.1.0.tgz
     version: 0.1.0
-generated: 2018-02-27T21:33:17.977756Z
+generated: 2018-04-09T20:52:58.512874+01:00
