@@ -2,28 +2,20 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-
-
 controller:
   replicaCount: 1
   image:
     repository: quay.io/lwolf/kubereplay-controller-amd64
-    tag: 1.0.0-alpha.8
+    tag: 1.0.0-alpha.14
     pullPolicy: IfNotPresent
 
 initializer:
   replicaCount: 1
   image:
     repository: quay.io/lwolf/kubereplay-initializer-amd64
-    tag: 1.0.0-alpha.8
+    tag: 1.0.0-alpha.14
     pullPolicy: IfNotPresent
 
-
-ingress:
-  enabled: false
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

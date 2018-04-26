@@ -22,19 +22,10 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.initializer.image.repository }}:{{ .Values.initializer.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: 80
-              protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
+          args:
+          - "--initializer-name"
+          - {{ template "kubereplay.fullname" . }}.initializer.lwolf.org
+          imagePullPolicy: {{ .Values.controller.image.pullPolicy }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}

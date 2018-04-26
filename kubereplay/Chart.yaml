@@ -1,5 +1,14 @@
 name: kubereplay
 apiVersion: v1
 version: 0.1.0
-appVersion: "1.0"
-description: A Kubereplay helm chart for Kubernetes
+appVersion: "1.0.0-alpha"
+description: Kubereplay
+keywords:
+- goreplay
+- kubereplay
+home: https://github.com/lwolf/kubereplay
+sources:
+- https://github.com/lwolf/kubereplay
+maintainers:
+- name: Sergey Nuzhdin
+  email: ipaq.lw@gmail.com
