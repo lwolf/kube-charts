@@ -6,14 +6,14 @@ controller:
   replicaCount: 1
   image:
     repository: quay.io/lwolf/kubereplay-controller-amd64
-    tag: 1.0.0-alpha.14
+    tag: 1.0.0-alpha.20
     pullPolicy: IfNotPresent
 
 initializer:
   replicaCount: 1
   image:
     repository: quay.io/lwolf/kubereplay-initializer-amd64
-    tag: 1.0.0-alpha.14
+    tag: 1.0.0-alpha.20
     pullPolicy: IfNotPresent
 
 
