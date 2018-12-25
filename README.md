@@ -5,6 +5,7 @@ Helm repository hosted using github-pages to simplify installation and dependenc
 ```
 $ helm repo add lwolf-charts https://charts.lwolf.org
 "lwolf-charts" has been added to your repositories
+$ helm repo update
 $ helm search | grep lwolf
 lwolf-charts/gitlab             0.1.0   GitLab Community Edition
 lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
@@ -17,3 +18,5 @@ lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
 * Registry - docker registry with gitlab settings
 * Stolon - HA PostgreSQL cluster
 * Plex - plex.tv media center
+* ViktoriaMetrics - https://viktoriametrics.com prometheus storage
+
