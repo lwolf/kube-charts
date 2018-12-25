@@ -496,25 +496,25 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.1.0.tgz
     version: 0.1.0
-  viktoria-metrics:
+  victoria-metrics:
   - apiVersion: v1
     appVersion: v1.3.1
     created: 2018-12-25T15:06:49.624857Z
-    description: A Helm chart for Viktoria Metrics
+    description: A Helm chart for Victoria Metrics
     digest: 50e1ed3405f93f123d2bfa63045faf590934466149a8d0f2c6d74bd2db433365
     home: https://victoriametrics.com/
     keywords:
     - prometheus
-    - viktoria-metrics
+    - victoria-metrics
     maintainers:
     - email: ipaq.lw@gmail.com
       name: Sergey Nuzhdin
       url: https://github.com/lwolf
-    name: viktoria-metrics
+    name: victoria-metrics
     sources:
     - https://github.com/lwolf/kube-charts
     - https://hub.docker.com/r/valyala/victoria-metrics/
     urls:
-    - http://charts.lwolf.org/viktoria-metrics-0.1.0.tgz
+    - http://charts.lwolf.org/victoria-metrics-0.1.0.tgz
     version: 0.1.0
 generated: 2018-12-25T15:06:49.58193Z
