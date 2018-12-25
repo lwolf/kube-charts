@@ -19,4 +19,5 @@ lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
 | Registry | 0.2.0 | docker registry with gitlab settings
 | Stolon | 0.7.0 |  HA PostgreSQL cluster
 | Plex | 0.1.1 | plex.tv media center
+| viktoria-metrics | 0.1.0 | viktoria-metrics prometheus storage
 
