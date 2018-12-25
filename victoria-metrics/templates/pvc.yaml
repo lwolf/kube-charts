@@ -2,10 +2,10 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ include "viktoria-metrics.fullname" . }}
+  name: {{ include "victoria-metrics.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "viktoria-metrics.name" . }}
-    helm.sh/chart: {{ include "viktoria-metrics.chart" . }}
+    app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
+    helm.sh/chart: {{ include "victoria-metrics.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:

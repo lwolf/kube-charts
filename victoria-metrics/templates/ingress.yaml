@@ -1,13 +1,13 @@
 {{- if .Values.ingress.enabled -}}
-{{- $fullName := include "viktoria-metrics.fullname" . -}}
+{{- $fullName := include "victoria-metrics.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app.kubernetes.io/name: {{ include "viktoria-metrics.name" . }}
-    helm.sh/chart: {{ include "viktoria-metrics.chart" . }}
+    app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
+    helm.sh/chart: {{ include "victoria-metrics.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- with .Values.ingress.annotations }}

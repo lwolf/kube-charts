@@ -1,9 +1,9 @@
 apiVersion: v1
 appVersion: "v1.3.1"
-description: A Helm chart for Viktoria Metrics
+description: A Helm chart for Victoria Metrics
 keywords:
   - prometheus
-  - viktoria-metrics
+  - victoria-metrics
 home: https://victoriametrics.com/
 sources:
   - https://github.com/lwolf/kube-charts
@@ -12,5 +12,5 @@ maintainers: # (optional)
   - name: Sergey Nuzhdin
     email: ipaq.lw@gmail.com
     url: https://github.com/lwolf
-name: viktoria-metrics
-version: 0.1.0
+name: victoria-metrics
+version: 0.1.1
