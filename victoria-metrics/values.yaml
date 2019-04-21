@@ -90,4 +90,4 @@ tls:
   ## Path to file with TLS key. Used only if tls=true
   tlsKeyFile: ''
 
-
+retentionPeriod: 6

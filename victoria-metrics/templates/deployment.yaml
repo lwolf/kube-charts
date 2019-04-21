@@ -26,16 +26,16 @@ spec:
           args:
             - -httpListenAddr=:8080
             - -storageDataPath={{ .Values.persistence.storageDataPath }}
-            {{- if .Values.loggerLevel -}}
+            {{- if .Values.loggerLevel }}
             - -loggerLevel={{ .Values.loggerLevel }}
             {{- end }}
-            {{- if .Values.maxQueryDuration -}}
+            {{- if .Values.maxQueryDuration }}
             - -maxQueryDuration={{ .Values.maxQueryDuration }}
             {{- end }}
-            {{- if .Values.precisionBits -}}
+            {{- if .Values.precisionBits }}
             - -precisionBits={{ .Values.precisionBits }}
             {{- end }}
-            {{- if .Values.retentionPeriod -}}
+            {{- if .Values.retentionPeriod }}
             - -retentionPeriod={{ .Values.retentionPeriod }}
             {{- end }}
             {{- if and (.Values.tls.enabled) (.Values.tls.tlsCertFile) (.Values.tls.tlsKeyFile) }}
