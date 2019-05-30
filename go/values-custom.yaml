@@ -1,0 +1,62 @@
+# Default values for go.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: lwolf/go
+  tag: 48-931ca11
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: LoadBalancer
+  port: 80
+
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  paths:
+    - /
+  hosts:
+    - go.srvho.me
+  tls:
+    - secretName: srvho-me-tls
+      hosts:
+        - go.srvho.me
+
+persistence:
+  ## This volume persists generated configuration files, keys, and certs.
+  ##
+  enabled: false
+  size: 1Gi
+  ## If defined, volume.beta.kubernetes.io/storage-class: <storageClass>
+  ## Default: volume.alpha.kubernetes.io/storage-class: default
+  ##
+  # storageClass: ""
+  accessMode: ReadWriteOnce
+
+
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  limits:
+    memory: 128Mi
+  requests:
+    memory: 128Mi
+
+nodeSelector:
+  beta.kubernetes.io/os: linux
+  beta.kubernetes.io/arch: amd64
+
+
+tolerations: []
+
+affinity: {}

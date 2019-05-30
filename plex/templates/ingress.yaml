@@ -1,6 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $releaseName := .Release.Name -}}
-{{- $servicePort := .Values.httpPort -}}
+{{- $servicePort := .Values.nodePort -}}
+{{- $name := default .Chart.Name .Values.nameOverride -}}
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -11,6 +12,7 @@ metadata:
   labels:
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    component: "{{ .Values.name }}"
     heritage: "{{ .Release.Service }}"
     release: "{{ .Release.Name }}"
   name: {{ template "fullname" . }}
@@ -23,15 +25,11 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: {{ printf "%s-%s" $releaseName "registry" | trunc 63 }}
+              serviceName: {{ printf "%s-%s" $releaseName $name | trunc 63 | trimSuffix "-" }}
               servicePort: {{ $servicePort }}
-  {{ end }}
-
+  {{- end -}}
+  {{- if .Values.ingress.tls }}
   tls:
-    - secretName: {{ default "registry-server-tls" .Values.ingress.secretName }}
-      hosts:
-      {{- range .Values.ingress.hosts }}
-        - {{ . }}
-      {{ end }}
-
+{{ toYaml .Values.ingress.tls | indent 4 }}
+  {{- end -}}
 {{- end -}}

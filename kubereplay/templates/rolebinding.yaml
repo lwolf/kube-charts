@@ -1,0 +1,17 @@
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: {{ template "kubereplay.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ template "kubereplay.fullname" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    heritage: {{ .Release.Service }}
+    release: {{ .Release.Name }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ template "kubereplay.fullname" . }}
+subjects:
+- kind: ServiceAccount
+  name: {{ template "kubereplay.fullname" . }}
