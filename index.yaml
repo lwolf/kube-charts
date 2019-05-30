@@ -22,7 +22,7 @@ entries:
     - https://hub.docker.com/r/sameersbn/gitlab
     - https://github.com/sameersbn/docker-gitlab
     urls:
-    - http://charts.lwolf.org/tmp/gitlab-0.3.0.tgz
+    - http://charts.lwolf.org/gitlab-0.3.0.tgz
     version: 0.3.0
   - created: 2019-05-30T13:59:24.226365+01:00
     description: GitLab Community Edition
@@ -254,7 +254,7 @@ entries:
     sources:
     - https://github.com/lwolf/kubereplay
     urls:
-    - http://charts.lwolf.org/tmp/kubereplay-0.1.1.tgz
+    - http://charts.lwolf.org/kubereplay-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v1
     appVersion: 1.0.0-alpha
@@ -290,7 +290,7 @@ entries:
     sources:
     - https://github.com/lwolf/kubereplay
     urls:
-    - http://charts.lwolf.org/tmp/kubereplay-0.1.0.tgz
+    - http://charts.lwolf.org/kubereplay-0.1.0.tgz
     version: 0.1.0
   plex:
   - created: 2019-05-30T13:59:24.255774+01:00
@@ -307,7 +307,7 @@ entries:
     sources:
     - https://hub.docker.com/r/plexinc/pms-docker/
     urls:
-    - http://charts.lwolf.org/tmp/plex-0.1.2.tgz
+    - http://charts.lwolf.org/plex-0.1.2.tgz
     version: 0.1.2
   - created: 2019-05-30T13:59:24.229742+01:00
     description: Plex
@@ -339,7 +339,7 @@ entries:
     sources:
     - https://hub.docker.com/r/plexinc/pms-docker/
     urls:
-    - http://charts.lwolf.org/tmp/plex-0.1.1.tgz
+    - http://charts.lwolf.org/plex-0.1.1.tgz
     version: 0.1.1
   - created: 2019-05-30T13:59:24.229133+01:00
     description: Plex
@@ -373,7 +373,7 @@ entries:
     sources:
     - https://hub.docker.com/r/gitlab/gitlab-runner/
     urls:
-    - http://charts.lwolf.org/tmp/registry-0.2.1.tgz
+    - http://charts.lwolf.org/registry-0.2.1.tgz
     version: 0.2.1
   - created: 2019-05-30T13:59:24.230389+01:00
     description: Gitlab docker registry
@@ -407,7 +407,7 @@ entries:
     sources:
     - https://hub.docker.com/r/gitlab/gitlab-runner/
     urls:
-    - http://charts.lwolf.org/tmp/registry-0.2.0.tgz
+    - http://charts.lwolf.org/registry-0.2.0.tgz
     version: 0.2.0
   runner:
   - appVersion: 11.11.0
@@ -427,7 +427,7 @@ entries:
     sources:
     - https://hub.docker.com/r/gitlab/gitlab-runner/
     urls:
-    - http://charts.lwolf.org/tmp/runner-0.5.0.tgz
+    - http://charts.lwolf.org/runner-0.5.0.tgz
     version: 0.5.0
   - created: 2019-05-30T13:59:24.234891+01:00
     description: GitLab-ci runner
@@ -659,7 +659,7 @@ entries:
     - https://github.com/lwolf/kube-charts
     - https://hub.docker.com/r/valyala/victoria-metrics/
     urls:
-    - http://charts.lwolf.org/tmp/victoria-metrics-0.1.3.tgz
+    - http://charts.lwolf.org/victoria-metrics-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v1
     appVersion: v1.3.1
