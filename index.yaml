@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   gitlab:
   - appVersion: 11.11.0
-    created: 2019-05-30T13:59:24.253741+01:00
+    created: 2019-05-30T15:08:24.572627+01:00
     description: GitLab Community Edition
-    digest: 6a718ddd2b4db39d3a4d013cc17d6404a549593bef7ac77b8ad614e52c66f1fd
+    digest: cb38c6df907221d79196143335837b1b24330762b76bd12de12f01685df43bf7
     home: https://about.gitlab.com
     icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
     keywords:
@@ -24,7 +24,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.3.0.tgz
     version: 0.3.0
-  - created: 2019-05-30T13:59:24.226365+01:00
+  - created: 2019-05-30T15:08:24.568717+01:00
     description: GitLab Community Edition
     digest: f64645953debda9f699dcdfa1ac7111e6b3076ef45410069e6625da40a954f2e
     home: https://about.gitlab.com
@@ -46,7 +46,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.8.tgz
     version: 0.2.8
-  - created: 2019-05-30T13:59:24.22095+01:00
+  - created: 2019-05-30T15:08:24.56467+01:00
     description: GitLab Community Edition
     digest: 76e02dd177161bac983c0d97cf65c192922747c967c7107f2d67b64a4fd9683d
     home: https://about.gitlab.com
@@ -68,7 +68,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.7.tgz
     version: 0.2.7
-  - created: 2019-05-30T13:59:24.215755+01:00
+  - created: 2019-05-30T15:08:24.561439+01:00
     description: GitLab Community Edition
     digest: a4229b043f3a98de2a6499bce6d1679f9ddb55291cde68c166b336a798534bf6
     home: https://about.gitlab.com
@@ -90,7 +90,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.6.tgz
     version: 0.2.6
-  - created: 2019-05-30T13:59:24.207967+01:00
+  - created: 2019-05-30T15:08:24.55868+01:00
     description: GitLab Community Edition
     digest: f0dc034f07d34ca0cf1f9f83cbd6917297ea147beb649e4e419e91dd1d39e820
     home: https://about.gitlab.com
@@ -112,7 +112,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.5.tgz
     version: 0.2.5
-  - created: 2019-05-30T13:59:24.201418+01:00
+  - created: 2019-05-30T15:08:24.552967+01:00
     description: GitLab Community Edition
     digest: a80cbe8e2229607806edb95d0b6b2c17c827325785066d19167b680f11546e4b
     home: https://about.gitlab.com
@@ -134,7 +134,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.4.tgz
     version: 0.2.4
-  - created: 2019-05-30T13:59:24.194089+01:00
+  - created: 2019-05-30T15:08:24.547677+01:00
     description: GitLab Community Edition
     digest: e8702b58d55ad99a232b793d97736821cba6a8e5f7a6c9e7094132fd997f0910
     home: https://about.gitlab.com
@@ -156,7 +156,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.3.tgz
     version: 0.2.3
-  - created: 2019-05-30T13:59:24.187845+01:00
+  - created: 2019-05-30T15:08:24.544453+01:00
     description: GitLab Community Edition
     digest: 0959fcb2abbaa1e1596d905b45b36a5967a6a1a842a55e7ce6c2321e5be746f5
     home: https://about.gitlab.com
@@ -178,7 +178,7 @@ entries:
     urls:
     - http://charts.lwolf.org/gitlab-0.2.2.tgz
     version: 0.2.2
-  - created: 2019-05-30T13:59:24.182689+01:00
+  - created: 2019-05-30T15:08:24.541514+01:00
     description: GitLab Community Edition
     digest: b1b3169632dbdee0b4f4097d123a587c13192fea06cf415ad71338ec094349a1
     home: https://about.gitlab.com
@@ -201,7 +201,7 @@ entries:
     - http://charts.lwolf.org/gitlab-0.1.0.tgz
     version: 0.1.0
   gitlab-registry:
-  - created: 2019-05-30T13:59:24.227079+01:00
+  - created: 2019-05-30T15:08:24.573227+01:00
     description: Gitlab docker registry
     digest: e53ad185b82e618d826f3d7ea9b0d49b12afa357eebc31b962e453ac61868abe
     home: https://about.gitlab.com
@@ -219,7 +219,7 @@ entries:
     - http://charts.lwolf.org/gitlab-registry-0.2.0.tgz
     version: 0.2.0
   gitlab-runner:
-  - created: 2019-05-30T13:59:24.22776+01:00
+  - created: 2019-05-30T15:08:24.573693+01:00
     description: GitLab-ci runner
     digest: 0045c943a3ae47ab02ba2fa0409d803d7567327104d716b908f768314fe71f71
     home: https://about.gitlab.com
@@ -240,9 +240,9 @@ entries:
   kubereplay:
   - apiVersion: v1
     appVersion: 1.0.0-alpha
-    created: 2019-05-30T13:59:24.254854+01:00
+    created: 2019-05-30T15:08:24.57516+01:00
     description: Kubereplay
-    digest: 6b8d74d5a53fdbf941b1f19b40ff72b2b6db52234865ac1f95dfd179fc433c60
+    digest: 80c9ebfbec73706a7b9bdd8be3d7766cab0d4da8b51d90c6e303a610e6e7d3ef
     home: https://github.com/lwolf/kubereplay
     keywords:
     - goreplay
@@ -258,7 +258,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: 1.0.0-alpha
-    created: 2019-05-30T13:59:24.228507+01:00
+    created: 2019-05-30T15:08:24.574335+01:00
     description: Kubereplay
     digest: 3ec76918a43e861f797750e94a141ec6851f0b5f95fae1ec9ad674380bddccfd
     home: https://github.com/lwolf/kubereplay
@@ -274,28 +274,10 @@ entries:
     urls:
     - http://charts.lwolf.org/kubereplay-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v1
-    appVersion: 1.0.0-alpha
-    created: 2019-05-30T13:59:24.254277+01:00
-    description: Kubereplay
-    digest: a1f905cb757e33dd1005130f7db7e558e3a9da1a0e88336a699a824d34250451
-    home: https://github.com/lwolf/kubereplay
-    keywords:
-    - goreplay
-    - kubereplay
-    maintainers:
-    - email: ipaq.lw@gmail.com
-      name: Sergey Nuzhdin
-    name: kubereplay
-    sources:
-    - https://github.com/lwolf/kubereplay
-    urls:
-    - http://charts.lwolf.org/kubereplay-0.1.0.tgz
-    version: 0.1.0
   plex:
-  - created: 2019-05-30T13:59:24.255774+01:00
+  - created: 2019-05-30T15:08:24.576809+01:00
     description: Plex
-    digest: fea14517263d3508de9caac8598a036a970a6d4ab37124b33de8ff1ec8a31ef5
+    digest: 964aa6b82a2168aeb3211c9c156341c322860df03f2520ef5f95d81750c06ca5
     home: https://www.plex.tv/
     icon: https://www.plex.tv/wp-content/themes/plex/img/plex-logo.png
     keywords:
@@ -309,7 +291,7 @@ entries:
     urls:
     - http://charts.lwolf.org/plex-0.1.2.tgz
     version: 0.1.2
-  - created: 2019-05-30T13:59:24.229742+01:00
+  - created: 2019-05-30T15:08:24.576256+01:00
     description: Plex
     digest: d4eb772cc147ffc39ba58c0ba437ea70b3a0eb614f723536e5a57cf293bf5e06
     home: https://www.plex.tv/
@@ -325,23 +307,7 @@ entries:
     urls:
     - http://charts.lwolf.org/plex-0.1.1.tgz
     version: 0.1.1
-  - created: 2019-05-30T13:59:24.255302+01:00
-    description: Plex
-    digest: 755d8c7b5b492fcd7f2e76162cfa88414b1592fcd8f63c47f798f6ac58c89a0c
-    home: https://www.plex.tv/
-    icon: https://www.plex.tv/wp-content/themes/plex/img/plex-logo.png
-    keywords:
-    - plex.tv
-    maintainers:
-    - email: ipaq.lw@gmail.com
-      name: Sergey Nuzhdin
-    name: plex
-    sources:
-    - https://hub.docker.com/r/plexinc/pms-docker/
-    urls:
-    - http://charts.lwolf.org/plex-0.1.1.tgz
-    version: 0.1.1
-  - created: 2019-05-30T13:59:24.229133+01:00
+  - created: 2019-05-30T15:08:24.575722+01:00
     description: Plex
     digest: d9fca733b26bdbd4d6f23aadeee8ba524edbc1155a42fdf6cb6c87e50903c529
     home: https://www.plex.tv/
@@ -358,9 +324,9 @@ entries:
     - http://charts.lwolf.org/plex-0.1.0.tgz
     version: 0.1.0
   registry:
-  - created: 2019-05-30T13:59:24.256617+01:00
+  - created: 2019-05-30T15:08:24.580146+01:00
     description: Gitlab docker registry
-    digest: dcb001f7334fb928ae6f5e3c70a36a2f48eeaef5d79e44b8e8787dc97a12adea
+    digest: 34460cdb98b154e1ab0a756ff05a80d2571cdb6410a73c33b16cc09b8cdea2a6
     home: https://about.gitlab.com
     icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
     keywords:
@@ -375,7 +341,7 @@ entries:
     urls:
     - http://charts.lwolf.org/registry-0.2.1.tgz
     version: 0.2.1
-  - created: 2019-05-30T13:59:24.230389+01:00
+  - created: 2019-05-30T15:08:24.577516+01:00
     description: Gitlab docker registry
     digest: 8ade6329c6cb1430e54e518b5af50781c2d96c23d25367a781d29f9666a1ccb7
     home: https://about.gitlab.com
@@ -392,28 +358,11 @@ entries:
     urls:
     - http://charts.lwolf.org/registry-0.2.0.tgz
     version: 0.2.0
-  - created: 2019-05-30T13:59:24.256196+01:00
-    description: Gitlab docker registry
-    digest: d35594bb254b22418eecaa316bc8cc0b34c7a86bd94bf9b97e66c662590e4607
-    home: https://about.gitlab.com
-    icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
-    keywords:
-    - gitlab
-    - registry
-    maintainers:
-    - email: ipaq.lw@gmail.com
-      name: Sergey Nuzhdin
-    name: registry
-    sources:
-    - https://hub.docker.com/r/gitlab/gitlab-runner/
-    urls:
-    - http://charts.lwolf.org/registry-0.2.0.tgz
-    version: 0.2.0
   runner:
   - appVersion: 11.11.0
-    created: 2019-05-30T13:59:24.257223+01:00
+    created: 2019-05-30T15:08:24.583469+01:00
     description: GitLab-ci runner
-    digest: 0a7b44d59050ce30db1899dd2105c263c766a26755b6a9825782001fd3fc6d57
+    digest: 582bb3b54715eb370386d1add4cab8d7d27523410a4501aa343330ef4aea5d93
     home: https://about.gitlab.com
     icon: https://gitlab.com/uploads/group/avatar/6543/gitlab-logo-square.png
     keywords:
@@ -429,7 +378,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.5.0.tgz
     version: 0.5.0
-  - created: 2019-05-30T13:59:24.234891+01:00
+  - created: 2019-05-30T15:08:24.582702+01:00
     description: GitLab-ci runner
     digest: 8404888aad158aa042e06350324684d47a143698d2ec3c905493e1c5da3f5542
     home: https://about.gitlab.com
@@ -447,7 +396,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.4.3.tgz
     version: 0.4.3
-  - created: 2019-05-30T13:59:24.23382+01:00
+  - created: 2019-05-30T15:08:24.582223+01:00
     description: GitLab-ci runner
     digest: 93e415d727fef063cabe42a88343c175d5fb0713a1c8957df047dce5aecb53f5
     home: https://about.gitlab.com
@@ -465,7 +414,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.4.2.tgz
     version: 0.4.2
-  - created: 2019-05-30T13:59:24.232538+01:00
+  - created: 2019-05-30T15:08:24.581758+01:00
     description: GitLab-ci runner
     digest: 47feb3f0d8cd4ca143f7645b906d348a52eca46c44b323566ad62967964cd28c
     home: https://about.gitlab.com
@@ -483,7 +432,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.4.1.tgz
     version: 0.4.1
-  - created: 2019-05-30T13:59:24.231748+01:00
+  - created: 2019-05-30T15:08:24.581237+01:00
     description: GitLab-ci runner
     digest: 30954975f4d3753266ac94b3909db29661cff2789bf38153396beb800ed14eb1
     home: https://about.gitlab.com
@@ -501,7 +450,7 @@ entries:
     urls:
     - http://charts.lwolf.org/runner-0.3.0.tgz
     version: 0.3.0
-  - created: 2019-05-30T13:59:24.23109+01:00
+  - created: 2019-05-30T15:08:24.580778+01:00
     description: GitLab-ci runner
     digest: a99630f2870e1bcfcbb91feb58a85f1457678af01c4b91e36b4584618b411d04
     home: https://about.gitlab.com
@@ -520,7 +469,7 @@ entries:
     - http://charts.lwolf.org/runner-0.2.0.tgz
     version: 0.2.0
   stolon:
-  - created: 2019-05-30T13:59:24.248221+01:00
+  - created: 2019-05-30T15:08:24.590783+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 48256bf3d2abdce4d3f8bb06c05cb1bace8f214f8c85e1bbadb0c14f6f0e6555
     home: https://github.com/sorintlab/stolon
@@ -536,7 +485,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.7.0.tgz
     version: 0.7.0
-  - created: 2019-05-30T13:59:24.24735+01:00
+  - created: 2019-05-30T15:08:24.590007+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: f71c2f1203f33c22f2ca6db5750415f774bf896e83081f55dbf864d2afb3eda2
     home: https://github.com/sorintlab/stolon
@@ -552,7 +501,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.6.0.tgz
     version: 0.6.0
-  - created: 2019-05-30T13:59:24.245736+01:00
+  - created: 2019-05-30T15:08:24.589333+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 813b9e133f5ba5fb66fc9a22feb61f4f9cdda8dc0cdc41391d9cc750f529b7fe
     home: https://github.com/sorintlab/stolon
@@ -568,7 +517,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.5.0.tgz
     version: 0.5.0
-  - created: 2019-05-30T13:59:24.243708+01:00
+  - created: 2019-05-30T15:08:24.588584+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 801d19535da813a85f164f454d3701751ef381cba446940f06611d94cd18c8dd
     home: https://github.com/sorintlab/stolon
@@ -584,7 +533,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.4.0.tgz
     version: 0.4.0
-  - created: 2019-05-30T13:59:24.241673+01:00
+  - created: 2019-05-30T15:08:24.587786+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 0cec617616fe6aa456280d4315261e561776bfd9950ac9a9b6755b52121f23a6
     home: https://github.com/sorintlab/stolon
@@ -598,7 +547,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.3.0.tgz
     version: 0.3.0
-  - created: 2019-05-30T13:59:24.240003+01:00
+  - created: 2019-05-30T15:08:24.587+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 3eccd97357791c4cc3047ed4cec7a3250d72b11fdb00b5c7710852ae2f13db55
     home: https://github.com/sorintlab/stolon
@@ -612,7 +561,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.2.0.tgz
     version: 0.2.0
-  - created: 2019-05-30T13:59:24.23891+01:00
+  - created: 2019-05-30T15:08:24.586007+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: 3e9ea8ba92ca6d4a759fd64e9a7b64d21a2779b4bfd1815a43905552e47dc526
     home: https://github.com/sorintlab/stolon
@@ -626,7 +575,7 @@ entries:
     urls:
     - http://charts.lwolf.org/stolon-0.1.1.tgz
     version: 0.1.1
-  - created: 2019-05-30T13:59:24.237124+01:00
+  - created: 2019-05-30T15:08:24.58478+01:00
     description: Stolon Helm Chart for Kubernetes.
     digest: bb4b7d7bf3678ebfbe368c279414254c5b0b61e26654f5ae0fface7f81676222
     home: https://github.com/sorintlab/stolon
@@ -643,7 +592,27 @@ entries:
   victoria-metrics:
   - apiVersion: v1
     appVersion: v1.18.8
-    created: 2019-05-30T13:59:24.257778+01:00
+    created: 2019-05-30T15:08:24.592923+01:00
+    description: A Helm chart for Victoria Metrics
+    digest: ffe5001535af710be5ea11feb7234b65ba559b313dc166801835dc828dff1ffd
+    home: https://victoriametrics.com/
+    keywords:
+    - prometheus
+    - victoria-metrics
+    maintainers:
+    - email: ipaq.lw@gmail.com
+      name: Sergey Nuzhdin
+      url: https://github.com/lwolf
+    name: victoria-metrics
+    sources:
+    - https://github.com/lwolf/kube-charts
+    - https://hub.docker.com/r/valyala/victoria-metrics/
+    urls:
+    - http://charts.lwolf.org/victoria-metrics-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v1
+    appVersion: v1.18.8
+    created: 2019-05-30T15:08:24.59241+01:00
     description: A Helm chart for Victoria Metrics
     digest: c57555ba0af23cf1f11c0b207326dba95a8b240f722d7c5000468e11c10cfe83
     home: https://victoriametrics.com/
@@ -663,7 +632,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: v1.3.1
-    created: 2019-05-30T13:59:24.249528+01:00
+    created: 2019-05-30T15:08:24.591859+01:00
     description: A Helm chart for Victoria Metrics
     digest: 4963cab56c4fc185d97c616331f2636a1576189b28821b72bddedcf15e75c344
     home: https://victoriametrics.com/
@@ -684,7 +653,7 @@ entries:
   viktoria-metrics:
   - apiVersion: v1
     appVersion: v1.3.1
-    created: 2019-05-30T13:59:24.248797+01:00
+    created: 2019-05-30T15:08:24.591336+01:00
     description: A Helm chart for Viktoria Metrics
     digest: 50e1ed3405f93f123d2bfa63045faf590934466149a8d0f2c6d74bd2db433365
     home: https://victoriametrics.com/
@@ -702,4 +671,4 @@ entries:
     urls:
     - http://charts.lwolf.org/victoria-metrics-0.1.0.tgz
     version: 0.1.0
-generated: 2019-05-30T13:59:24.17713+01:00
+generated: 2019-05-30T15:08:24.538684+01:00
