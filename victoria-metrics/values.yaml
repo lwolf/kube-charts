@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: valyala/victoria-metrics
-  tag: tags-v1.3.1-single-image-0-g7beaa06c
+  tag: v1.18.8
   pullPolicy: IfNotPresent
 
 nameOverride: ""
