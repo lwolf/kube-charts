@@ -2,6 +2,7 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: {{ include "victoria-metrics.fullname" . }}
+  namespace: "{{ .Release.Namespace }}"
   labels:
     app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
     helm.sh/chart: {{ include "victoria-metrics.chart" . }}
@@ -51,13 +52,23 @@ spec:
               containerPort: 8080
               protocol: TCP
           livenessProbe:
+            failureThreshold: 3
             httpGet:
               path: /health
               port: http
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
           readinessProbe:
+            failureThreshold: 3
             httpGet:
               path: /health
               port: http
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
