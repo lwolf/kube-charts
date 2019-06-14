@@ -10,6 +10,8 @@ metadata:
     app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: Recreate
   selector:
     matchLabels:
       app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
@@ -19,6 +21,10 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
+    {{- if .Values.podAnnotations }}
+      annotations:
+    {{ toYaml .Values.podAnnotations | indent 4 }}
+    {{- end }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
