@@ -1,0 +1,21 @@
+{{- if .Values.prometheusOperator.enabled -}}
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: {{ include "victoria-metrics.fullname" . }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    monitoring: services
+    release: prometheus-operator
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
+  namespaceSelector:
+    matchNames:
+      - {{ .Release.Namespace }}
+  jobLabel: victoriaMetrics
+  endpoints:
+  - port: http
+    interval: 5s
+{{- end }}
