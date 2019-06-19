@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: valyala/victoria-metrics
-  tag: v1.18.8
+  tag: v1.18.11
   pullPolicy: IfNotPresent
 
 nameOverride: ""
@@ -70,8 +70,8 @@ tolerations: []
 
 affinity: {}
 
-podAnnotations:
-  sidecar.istio.io/inject: "false"
+podAnnotations: {}
+#  sidecar.istio.io/inject: "false"
 
 prometheusOperator:
   enabled: false

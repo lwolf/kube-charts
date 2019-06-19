@@ -13,4 +13,4 @@ maintainers: # (optional)
     email: ipaq.lw@gmail.com
     url: https://github.com/lwolf
 name: victoria-metrics
-version: 0.1.6
+version: 0.1.7
