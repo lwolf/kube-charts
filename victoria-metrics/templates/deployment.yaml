@@ -21,10 +21,10 @@ spec:
       labels:
         app.kubernetes.io/name: {{ include "victoria-metrics.name" . }}
         app.kubernetes.io/instance: {{ .Release.Name }}
-    {{- if .Values.podAnnotations }}
+{{- if .Values.podAnnotations }}
       annotations:
-        {{ toYaml .Values.podAnnotations | indent 8 | trim }}
-    {{- end }}
+{{ toYaml .Values.podAnnotations | indent 8 }}
+{{- end }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
