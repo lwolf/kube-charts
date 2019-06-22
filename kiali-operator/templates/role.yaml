@@ -1,5 +1,3 @@
----
-# NOTE: Changes to this file must be reflected in the OperatorHub.io CSV file
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
@@ -72,8 +70,8 @@ rules:
   - watch
 - apiGroups: ["rbac.authorization.k8s.io"]
   resources:
-  ${OPERATOR_ROLE_CLUSTERROLEBINDINGS}
-  ${OPERATOR_ROLE_CLUSTERROLES}
+  - clusterrolebindings
+  - clusterroles
   - rolebindings
   - roles
   verbs:
