@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "kiali-operator.fullname" . }}
+  labels:
+    app.kubernetes.io/name: {{ include "kiali-operator.name" . }}
+    app.kubernetes.io/version: {{ .Chart.AppVersion }}
+    app: {{ include "kiali-operator.name" . }}
+    version: {{ .Chart.AppVersion }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+    app.kubernetes.io/name: {{ include "kiali-operator.name" . }}
+    app.kubernetes.io/version: {{ .Chart.AppVersion }}
+    app: {{ include "kiali-operator.name" . }}
+    version: {{ .Chart.AppVersion }}
+  template:
+    metadata:
+      name: {{ include "kiali-operator.name" . }}
+      labels:
+        app.kubernetes.io/name: {{ include "kiali-operator.name" . }}
+        app.kubernetes.io/version: {{ .Chart.AppVersion }}
+        app: {{ include "kiali-operator.name" . }}
+        version: {{ .Chart.AppVersion }}
+    spec:
+      serviceAccountName: {{ include "kiali-operator.name" . }}
+      containers:
+      - name: operator
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env:
+        - name: WATCH_NAMESPACE
+          value: {{ .Release.Namespace }}
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: OPERATOR_NAME
+          value: {{ include "kiali-operator.fullname" . }}

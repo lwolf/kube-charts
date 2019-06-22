@@ -1,0 +1,17 @@
+apiVersion: v1
+appVersion: 0.21.0
+description: A Helm chart for Kiali operator
+engine: gotpl
+home: https://github.com/kiali/kiali
+keywords:
+  - operator
+  - istio
+  - kiali
+mainteiners:
+  - email: ipaq.lw@gmail.com
+    name: lwolf
+name: kiali-operator
+sources:
+  - https://github.com/kiali/kiali
+  - https://github.com/lwolf/kube-charts
+version: 0.1.0
