@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  tag: stable
+  repository: quay.io/kiali/kiali-operator
+  tag: v0.21.0
   pullPolicy: IfNotPresent
 
 nameOverride: ""
