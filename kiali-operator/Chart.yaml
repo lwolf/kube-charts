@@ -14,4 +14,4 @@ name: kiali-operator
 sources:
   - https://github.com/kiali/kiali
   - https://github.com/lwolf/kube-charts
-version: 0.2.0
+version: 0.2.1
