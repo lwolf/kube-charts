@@ -3,32 +3,42 @@ kind: Deployment
 metadata:
   name: {{ include "kiali-operator.fullname" . }}
   labels:
-    app.kubernetes.io/name: {{ include "kiali-operator.name" . }}
-    app.kubernetes.io/version: {{ .Chart.AppVersion }}
-    app: {{ include "kiali-operator.name" . }}
-    version: {{ .Chart.AppVersion }}
+    {{- include "kiali-operator.appName" . | indent 4 }}
+    {{- include "kiali-operator.appVersion" . | indent 4 }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.operator.replicaCount }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ include "kiali-operator.name" . }}
-      app.kubernetes.io/version: {{ .Chart.AppVersion }}
-      app: {{ include "kiali-operator.name" . }}
-      version: {{ .Chart.AppVersion }}
+      {{- include "kiali-operator.appName" . | indent 6}}
+      {{- include "kiali-operator.appVersion" . | indent 6}}
   template:
     metadata:
       name: {{ include "kiali-operator.name" . }}
       labels:
-        app.kubernetes.io/name: {{ include "kiali-operator.name" . }}
-        app.kubernetes.io/version: {{ .Chart.AppVersion }}
-        app: {{ include "kiali-operator.name" . }}
-        version: {{ .Chart.AppVersion }}
+      {{- include "kiali-operator.appName" . | indent 8}}
+      {{- include "kiali-operator.appVersion" . | indent 8}}
     spec:
       serviceAccountName: {{ include "kiali-operator.name" . }}
       containers:
+      - name: ansible
+        command:
+          - /usr/local/bin/ao-logs
+          - /tmp/ansible-operator/runner
+          - stdout
+        image: "{{ .Values.operator.image.repository }}:{{ .Values.operator.image.tag }}"
+        imagePullPolicy: {{ .Values.operator.image.pullPolicy }}
+        volumeMounts:
+          - mountPath: /tmp/ansible-operator/runner
+            name: runner
+            readOnly: true
       - name: operator
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        image: "{{ .Values.operator.image.repository }}:{{ .Values.operator.image.tag }}"
+        imagePullPolicy: {{ .Values.operator.image.pullPolicy }}
+        volumeMounts:
+        - mountPath: /tmp/ansible-operator/runner
+          name: runner
         env:
         - name: WATCH_NAMESPACE
           value: {{ .Release.Namespace }}
@@ -38,3 +48,20 @@ spec:
               fieldPath: metadata.name
         - name: OPERATOR_NAME
           value: {{ include "kiali-operator.fullname" . }}
+        resources:
+{{ toYaml .Values.operator.resources | indent 12 }}
+    {{- with .Values.operator.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.operator.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.operator.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+      volumes:
+      - name: runner
+        emptyDir: {}

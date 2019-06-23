@@ -1,0 +1,19 @@
+{{- $ := . -}}
+{{- range $instance := .Values.instances }}
+apiVersion: kiali.io/v1alpha1
+kind: Kiali
+metadata:
+  name: kiali
+  namespace: {{ $instance.namespace }}
+  labels:
+    chart: "{{ $.Chart.Name }}-{{ $.Chart.Version }}"
+    release: "{{ $.Release.Name }}"
+    {{- include "kiali-operator.appName" $ | indent 4 }}
+    {{- include "kiali-operator.appVersion" $ | indent 4 }}
+{{- with $instance.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
+spec:
+{{ toYaml $instance.crdSpec | indent 2 }}
+{{ end }}

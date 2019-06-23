@@ -30,3 +30,20 @@ Create chart name and version as used by the chart label.
 {{- define "kiali-operator.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
+
+{{- define "kiali-operator.appName" -}}
+{{- $name := (include "kiali-operator.name" .) -}}
+{{- range .Values.labels.appFieldNames }}
+{{- $key := . | title | lower}}
+{{ printf "%s: %s" $key $name }}
+{{- end }}
+{{- end -}}
+
+{{- define "kiali-operator.appVersion" -}}
+{{- $version := .Chart.AppVersion -}}
+{{- range .Values.labels.versionFieldNames }}
+{{- $key := . | title | lower}}
+{{ printf "%s: %s" $key $version }}
+{{- end }}
+{{- end -}}
+
