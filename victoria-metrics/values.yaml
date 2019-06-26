@@ -88,6 +88,9 @@ prometheusOperator:
 ## Retention period in months (default 1)
 # retentionPeriod:
 
+## Extra VictoriaMetrics commandline flags (default empty)
+extraFlags: []
+
 tls:
   ## Whether to enable TLS (aka HTTPS) for incoming requests. tlsCertFile and tlsKeyFile must be set if tls=true
   enabled: false

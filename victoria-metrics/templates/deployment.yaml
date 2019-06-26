@@ -50,6 +50,9 @@ spec:
             - -tlsCertFile={{ .Values.tls.tlsCertFile }}
             - -tlsKeyFile={{ .Values.tls.tlsKeyFile }}
             {{- end }}
+            {{- range .Values.extraFlags }}
+            - {{ . }}
+            {{- end }}
           volumeMounts:
           - mountPath: {{ .Values.persistence.storageDataPath }}
             name: data
