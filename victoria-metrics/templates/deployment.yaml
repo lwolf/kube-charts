@@ -100,3 +100,6 @@ spec:
       {{- else }}
         emptyDir: {}
       {{ end }}
+      {{- if .Values.imagePullSecrets }}
+      imagePullSecrets: {{ toYaml .Values.imagePullSecrets | trim | nindent 6 }}
+      {{- end }}
