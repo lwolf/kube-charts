@@ -19,4 +19,4 @@ lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
 * Stolon - HA PostgreSQL cluster
 * Plex - plex.tv media center
 * VictoriaMetrics - https://victoriametrics.com prometheus storage
-
+* kube-cleanup-operator -  https://github.com/lwolf/kube-cleanup-operator
