@@ -21,3 +21,4 @@ lwolf-charts/stolon             0.1.0   Stolon Helm Chart for Kubernetes.
 | Plex | 0.1.1 | |plex.tv media center
 | victoria-metrics |  0.1.8 | 1.20.7 | https://victoriametrics.com prometheus storage
 | kiali-operator |  0.2.1 | 0.21.0 | Kiali operator for istio monitoring
+| kube-cleanup-operator |  1.0.0 | v0.8.1 | https://github.com/lwolf/kube-cleanup-operator
